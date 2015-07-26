@@ -17,11 +17,27 @@
 		.error(function(){
 			$('#message').text('An error occurred');
 		});
+		
+		var t = $.ajax({
+			url:'http://frozen-woodland-5503.herokuapp.com/cors.json',
+			data:null,
+			type:'POST',
+			contentType:'text/plain',
+			dataType:'json'
+		})
+		.done(function(data){
+			$('#message2').text(data.name.last);
+		})
+		.error(function(){
+			$('#message2').text('An error occurred');
+		});
 	});
 </script>
 </head>
 <body>
-	<h1>Cross Domain AJAX call with CORS</h1>
+	<h1>Cross Domain AJAX call: Web API on SSL</h1>
 	<span id="message">Sending request by post...</span>
+	<h1>Cross Domain AJAX call: Web API on HTTP</h1>
+	<span id="message2">Sending request by post...</span>
 </body>
 </html>
