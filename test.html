@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js"></script>
+<script>
+	$(function(){
+		var t = $.ajax({
+			url:'https://frozen-woodland-5503.herokuapp.com/cors.json',
+			data:null,
+			type:'POST',
+			contentType:'text/plain',
+			dataType:'json'
+		})
+		.done(function(data){
+			$('#message').text(data.name.last);
+		})
+		.error(function(){
+			$('#message').text('An error occurred');
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>Cross Domain AJAX call with CORS</h1>
+	<span id="message">Sending request by post...</span>
+</body>
+</html>
