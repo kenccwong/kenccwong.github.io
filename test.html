@@ -12,7 +12,9 @@
 			dataType:'json'
 		})
 		.done(function(data){
-			$('#message').text(data.name.last);
+			if(data.name.last==='Moon') {
+				$('#message').text('Call complete');
+			}
 		})
 		.error(function(){
 			$('#message').text('An error occurred');
@@ -26,7 +28,9 @@
 			dataType:'json'
 		})
 		.done(function(data){
-			$('#message2').text(data.name.last);
+			if(data.name.last==='Moon') {
+				$('#message2').text('Call complete');
+			}
 		})
 		.error(function(){
 			$('#message2').text('An error occurred');
