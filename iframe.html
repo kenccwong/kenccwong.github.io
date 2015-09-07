@@ -8,7 +8,7 @@
 		height = Math.max(body.scrollHeight, body.offsetHeight, 
 		html.clientHeight, html.scrollHeight, html.offsetHeight);
 		if (parent.postMessage) {
-			parent.postMessage(height, "http://localhost");
+			parent.postMessage(height, "http://localhost:8080");
 			console.log('posted height');
 		}
 	}
