@@ -9,8 +9,8 @@
 		html.clientHeight, html.scrollHeight, html.offsetHeight);
 		if (parent.postMessage) {
 			parent.postMessage(height, "http://localhost");
+			console.log('posted height');
 		}
-		alert(height);
 	}
 	
 	$(function(){
