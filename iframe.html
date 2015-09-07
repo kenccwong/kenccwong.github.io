@@ -3,10 +3,7 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
 	function iframe_resize(){
-		var body = document.body,
-		html = document.documentElement,
-		height = Math.max(body.scrollHeight, body.offsetHeight, 
-		html.clientHeight, html.scrollHeight, html.offsetHeight);
+		height=$(document).height();
 		if (parent.postMessage) {
 			parent.postMessage(height, "http://localhost:8080");
 			console.log('posted height:' + height);
