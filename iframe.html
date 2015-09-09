@@ -1,16 +1,5 @@
 <html>
 <head>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script>
-	window.iFrameResizer = {
-		targetOrigin: 'http://localhost:8080',
-        readyCallback: function(){
-            var myId = window.parentIFrame.getId();
-            console.log('The ID of the iFrame in the parent page is: '+myId);
-        }
-    }
-</script>
-<script type="text/javascript" src="iframeResizer.contentWindow.min.js"></script>
 </head>
 <body>
 <div id="lipsum">
@@ -29,5 +18,11 @@ Pellentesque porta, ipsum nec sagittis facilisis, enim turpis faucibus arcu, eu 
 <p>
 Aliquam nec neque neque. Vivamus varius metus in nisi sollicitudin egestas. Maecenas eu massa tincidunt, pharetra ex at, semper lacus. Proin mattis placerat interdum. Suspendisse vel ex arcu. Donec eu massa pellentesque ipsum condimentum mollis. Integer ac magna id risus eleifend ultrices at at enim. Aliquam erat volutpat. Fusce ullamcorper imperdiet magna, vel egestas urna consectetur vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
 </p></div>
+<script type="text/javascript">
+	window.iFrameResizer = {
+		targetOrigin: 'http://localhost:8080'
+    }
+</script>
+<script type="text/javascript" src="iframeResizer.contentWindow.min.js"></script>
 </body>
 </html>
