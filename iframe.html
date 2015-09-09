@@ -1,20 +1,16 @@
 <html>
 <head>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript">
-	function iframe_resize(){
-		height=$('#lipsum').height();
-		if (parent.postMessage) {
-			parent.postMessage(height, "http://localhost:8080");
-			console.log('posted height:' + height);
-		}
-	}
-	
-	$(function(){
-		iframe_resize();
-		$( window ).resize(iframe_resize);
-	});
+<script>
+	window.iFrameResizer = {
+		targetOrigin: 'http://localhost:8080',
+        readyCallback: function(){
+            var myId = window.parentIFrame.getId();
+            console.log('The ID of the iFrame in the parent page is: '+myId);
+        }
+    }
 </script>
+<script type="text/javascript" src="iframeResizer.contentWindow.min.js"></script>
 </head>
 <body>
 <div id="lipsum">
