@@ -1,0 +1,4 @@
+[
+	{"name":"Fund 1", "code":"fund1","risk":"Medium to High","rating":1,"offerPrice":1.1234,"bidPrice":1.4321,"valuationDate":1442737025379,"factsheetUrl":"/factsheet-fund1.pdf"},
+	{"name":"Fund 2", "code":"fund2","risk":"Medium to High","rating":2,"offerPrice":2.1234,"bidPrice":2.4321,"valuationDate":1442737025379,"factsheetUrl":"/factsheet-fund2.pdf"}
+]
