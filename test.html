@@ -3,6 +3,9 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js"></script>
 <script>
+	window.iFrameResizer = {
+		targetOrigin: 'http://localhost:8080'
+	}
 	$(function(){
 		var t = $.ajax({
 			url:'https://frozen-woodland-5503.herokuapp.com/cors.json',
@@ -35,8 +38,10 @@
 		.error(function(){
 			$('#message2').text('An error occurred');
 		});
+		$.getScript('http://malayair-dev.neolane.net/webApp/test?fid=qwerty&extra=testing');
 	});
 </script>
+<script type="text/javascript" src="iframeResizer.contentWindow.min.js"></script>
 </head>
 <body>
 	<h1>Cross Domain AJAX call: Web API on SSL</h1>
