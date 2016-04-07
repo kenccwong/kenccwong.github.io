@@ -1,6 +1,6 @@
 {
 "columnHeaders":{
-	"name":"Fund Name","code":"Code","risk":"Fund Risk","rating":"Morningstart Rating","offerPrice":"Offer Price","bidPrice":"Bid Price","valuationDate":"Valuation Date","factsheetUrl":"Factsheet"
+	"name":"Fund Name","code":"Code","risk":"Fund Risk","rating":"Morningstar Rating","offerPrice":"Offer Price","bidPrice":"Bid Price","valuationDate":"Valuation Date","factsheetUrl":"Factsheet"
 },
 "data":[
 	{"name":"Fund 1","code":"fund1","risk":"Medium to High","rating":1,"offerPrice":1.1234,"bidPrice":1.4321,"valuationDate":1442737025379,"factsheetUrl":"/factsheet-fund1.pdf","objective":"To maximize capital growth and income","type":"Local Equity","underlying":"Invest in predominantly big cap stocks",
