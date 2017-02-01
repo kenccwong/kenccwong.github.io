@@ -2129,25 +2129,20 @@ mboxScPluginFetcher.prototype.Tf = function (qb, Mc) {
 		Mc.addParameter(qb, _);
 };
 function aam_tnt_cb() {
-	/*
+
 	if (typeof(arguments[0].stuff) != "undefined" && arguments[0].stuff != "") {
 		for (var i = 0; i < arguments[0].stuff.length; i++) {
 			if (arguments[0].stuff[i].cn == "at_shangrila") {
 				if (arguments[0].stuff[0].cv.split(",")) {
-					var demdex_raw = arguments[0].stuff[i].cv;
-					var tapMboxBuilder = mboxFactoryDefault.getUrlBuilder();
-					tapMboxBuilder.addParameters(demdex_raw);
-					//TNT.createGlobalMbox();
+					window.demdex_raw = arguments[0].stuff[i].cv;
+					window.targetPageParams = function() {
+						return window.demdex_raw;
+					}
+					TNT.createGlobalMbox();
 				}
 			}
 		}
 	}
-	*/
-	window.demdex_raw = 'segments=009,pv1';
-	window.targetPageParams = function() {
-		return window.demdex_raw;
-	}
-	//TNT.createGlobalMbox();
 }
 document.write('<script src="' + document.location.protocol + '//shangri-lainternational.demdex.net/event?d_stuff=1&d_dst=1&d_rtbd=json&d_cb=aam_tnt_cb"></script>');
 if (TNT.isAutoCreateGlobalMbox()) {
