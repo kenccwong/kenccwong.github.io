@@ -2136,7 +2136,7 @@ function aam_tnt_cb() {
 					var demdex_raw = arguments[0].stuff[i].cv;
 					var tapMboxBuilder = mboxFactoryDefault.getUrlBuilder();
 					tapMboxBuilder.addParameters(demdex_raw);
-					TNT.createGlobalMbox();
+					//TNT.createGlobalMbox();
 				}
 			}
 		}
@@ -2144,7 +2144,7 @@ function aam_tnt_cb() {
 	var demdex_raw = 'segments=009,pv1';
 	var tapMboxBuilder = mboxFactoryDefault.getUrlBuilder();
 	tapMboxBuilder.addParameters(demdex_raw);
-	TNT.createGlobalMbox();
+	//TNT.createGlobalMbox();
 }
 document.write('<script src="' + document.location.protocol + '//shangri-lainternational.demdex.net/event?d_stuff=1&d_dst=1&d_rtbd=json&d_cb=aam_tnt_cb"></script>');
 if (TNT.isAutoCreateGlobalMbox()) {
