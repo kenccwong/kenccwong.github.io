@@ -2143,7 +2143,7 @@ function aam_tnt_cb() {
 		}
 	}
 	*/
-	var window.demdex_raw = 'segments=009,pv1';
+	window.demdex_raw = 'segments=009,pv1';
 	window.targetPageParams = function() {
 		return window.demdex_raw;
 	}
