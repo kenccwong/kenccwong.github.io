@@ -2133,7 +2133,7 @@ function aam_tnt_cb() {
 		for (var i = 0; i < arguments[0].stuff.length; i++) {
 			if (arguments[0].stuff[i].cn == "at_shangrila") {
 				if (arguments[0].stuff[0].cv.split(",")) {
-					var demdex_raw = arguments[0].stuff[i].cv;
+					var demdex_raw = 'segments=009,pv1';//arguments[0].stuff[i].cv;
 					var tapMboxBuilder = mboxFactoryDefault.getUrlBuilder();
 					tapMboxBuilder.addParameters(demdex_raw);
 					TNT.createGlobalMbox();
