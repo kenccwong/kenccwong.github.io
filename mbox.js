@@ -2143,9 +2143,9 @@ function aam_tnt_cb() {
 		}
 	}
 	*/
-	var demdex_raw = 'segments=009,pv1';
+	var window.demdex_raw = 'segments=009,pv1';
 	window.targetPageParams = function() {
-		return demdex_raw;
+		return window.demdex_raw;
 	}
 	//TNT.createGlobalMbox();
 }
