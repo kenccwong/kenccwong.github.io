@@ -2137,7 +2137,7 @@ function aam_tnt_cb() {
 					window.targetPageParams = function () {
 						return window.demdex_raw;
 					}
-					//TNT.createGlobalMbox();
+					TNT.createGlobalMbox();
 				}
 			}
 		}
