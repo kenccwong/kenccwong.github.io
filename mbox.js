@@ -2129,6 +2129,7 @@ mboxScPluginFetcher.prototype.Tf = function (qb, Mc) {
 		Mc.addParameter(qb, _);
 };
 function aam_tnt_cb() {
+	/*
 	if (typeof(arguments[0].stuff) != "undefined" && arguments[0].stuff != "") {
 		for (var i = 0; i < arguments[0].stuff.length; i++) {
 			if (arguments[0].stuff[i].cn == "at_shangrila") {
@@ -2141,6 +2142,7 @@ function aam_tnt_cb() {
 			}
 		}
 	}
+	*/
 	var demdex_raw = 'segments=009,pv1';
 	window.targetPageParams = function() {
 		return demdex_raw;
