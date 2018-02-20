@@ -541,7 +541,7 @@
                                       '<h5>{{srDescription}}</h5>'+
                                     '</label>'+
                                   '</div>' +
-                                  '<div class="add-on-text">{{#ifEquals remoteAuthInd "Y"}} This request supports Remote Authentication{{#ifEquals srCode "SR001"}} only for <strong><u>Non Healthshield Policies</u></strong>{{else}}{{#ifEquals srCode "SR007"}} only for <strong><u>Non Healthshield Policies</u></strong>{{/if}}{{/if}}. {{else}} {{#ifEquals sgnatureAuthInd "Y"}} This request requires Signature Authentication. {{/ifEquals}}{{/ifEquals}}</div>'+
+                                  '<div class="add-on-text">{{#ifEquals remoteAuthInd "Y"}} This request supports Remote Authentication{{#ifEquals srCode "SR001"}} only for <strong><u>Non Healthshield Policies</u></strong>{{else}}{{#ifEquals srCode "SR007"}} only for <strong><u>Non Healthshield Policies</u></strong>{{/ifEquals}}{{/ifEquals}}. {{else}} {{#ifEquals sgnatureAuthInd "Y"}} This request requires Signature Authentication. {{/ifEquals}}{{/ifEquals}}</div>'+
                                 '</div>'+
                               '</div>'+
                             '</li>'+
